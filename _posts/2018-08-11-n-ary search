@@ -1,0 +1,8 @@
+---
+layout: post
+title:  "n-ary search"
+date:   2018-08-10 18:16:10 -0700
+categories: coding
+---
+
+Good observation about time complexity of n-ary search: https://cs.stackexchange.com/a/29756
