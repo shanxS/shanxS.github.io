@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Networking 1 of many"
+title:  "TCP (1 of many)"
 date:   2020-05-24 18:16:10 -0700
 categories: stuff
 ---
