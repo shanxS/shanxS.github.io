@@ -40,17 +40,25 @@ Tcpdump will show you then handshake of SYN, SYN-ACK, ACK:
 
 Output format of tcpdump is well described in: https://www.tcpdump.org/manpages/tcpdump.1.html
 
-Anyway, let's go line by line:
+Anyway, let's go thru 1st line:
 `21:18:40.964994 IP 192.168.3.1.56402 > 192.168.3.3.234: Flags [S], seq 2467894129, win 65535, options [mss 1460,nop,wscale 6,nop,nop,TS val 874609633 ecr 0,sackOK,eol], length 0`
 
 1st column time is time as seen by localhost, RPi in this case.
+
 2nd column says the protocol, IP. For ARP, you'll see ARP etc.
+
 3rd column is $PACKETS_SOURCE_IP$.$PACKETS_SOURCE_PORT$
+
 5th column is $PACKETS_DESTINATION$.$PACKETS_DESTINATION_PORT$
+
 6th and 7th column shows flags, in this case it's SYN, represented by S. Other flags can beS (SYN), F (FIN), P (PUSH), R (RST), U (URG), W (ECN CWR), E (ECN-Echo) or . (ACK), or none if no flags are set.
+
 8th and 9th column is seq of packet in case of SYN and SYN-ACK. One handshake is done it appears that seq number resets to 1 (see the last ACK in handshake).
+
 10th and 11th column show # of bytes left in buffer space in other direction of the connection.
+
 12th is TCP options, go into details of that later.
+
 Last and 2nd last column is length of payload. Which is 0 in this case since this is just a handshake.
 
 ### TCP connection failure since no one is listening on target port
@@ -82,7 +90,7 @@ Lets send a string this time `asdfasdfasdfasdfasdf`
 
 For PUSH-ACK, note the length is 21B and seq is 1:22. And for ACK that was sent back is 22.
 
-### Server Ending connection
+### Ending connection
 
 Either side may choose to close the connection
 
