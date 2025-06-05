@@ -8,4 +8,8 @@ permalink: /contact/
 
 [linkedIn](https://www.linkedin.com/in/shashank-kumar-9797a014)
 
-irc freenode nick: shanxS
+[X](https://x.com/_other_half)
+
+### Tools
+1. [Flash card reader](https://shanxs.github.io/flash-card/)
+2. [Alignment between resume and job](https://sk-resume-to-job-alignment.streamlit.app/)
